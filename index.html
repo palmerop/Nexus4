@@ -34,7 +34,7 @@
         max-width: 400px;
 	-webkit-filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.6));
         filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.6));
-        font: 12px/20px 'Roboto COndensed', Arial, Helvetica, sans-serif;
+        font: 12px/20px 'Roboto Condensed', Arial, Helvetica, sans-serif;
     }
     </style>
   </head>
@@ -148,7 +148,7 @@
             map.getCanvas().style.cursor = 'pointer'
             const country = features[0].state['CName']
             const Link = features[0].state['Link']
-            popup.trackPointer().setHTML('<h4><center>'+country+'</h4></center>'+'<p>Download the report <a href='+Link + '>here</a></p>').addTo(map)
+            popup.trackPointer().setHTML('<h4><strong><center>'+country+'</h4></strong></center>'+'<p>Download the report <a href='+Link + '>here</a></p>').addTo(map)
             
           }
           //handles everything else
