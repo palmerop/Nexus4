@@ -146,7 +146,6 @@
             map.getCanvas().style.cursor = 'pointer'
             const country = features[0].state['CName']
             const nexus = features[0].state['Nexus']
-	    const pdfurl = e.features[0].state['LINK']
             popup.trackPointer().setHTML('<h4>'+country+'</h4>'+'<p>'+nexus+'</p>').addTo(map)
             
           }
