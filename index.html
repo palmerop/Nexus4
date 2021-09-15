@@ -145,8 +145,8 @@
           else if (features[0].state['Nexus'] === 'YES'){
             map.getCanvas().style.cursor = 'pointer'
             const country = features[0].state['CName']
-            const nexus = features[0].state['Nexus']
-            popup.trackPointer().setHTML('<h4>'+country+'</h4>'+'<p>'+nexus+'</p>').addTo(map)
+            const Link = features[0].state['Link']
+            popup.trackPointer().setHTML('<h4>'+country+'</h4>'+'<p>'+Link+'</p>').addTo(map)
             
           }
           //handles everything else
