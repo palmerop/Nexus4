@@ -148,7 +148,7 @@
             map.getCanvas().style.cursor = 'pointer'
             const country = features[0].state['CName']
             const Link = features[0].state['Link']
-            popup.trackPointer().setHTML('<h4>'+country+'</h4>'+'<p>Download the report <a href='+Link + '>here</a></p>').addTo(map)
+            popup.trackPointer().setHTML('<h4><center>'+country+'</h4></center>'+'<p>Download the report <a href='+Link + '>here</a></p>').addTo(map)
             
           }
           //handles everything else
