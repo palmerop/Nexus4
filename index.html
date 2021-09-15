@@ -85,8 +85,8 @@
                       {
                         Country: row.COUNTRY,
                         Nexus: row.NEXUS,
-				                CName: row.CNAME,
-				                Link: row.LINK                      
+			CName: row.CNAME,
+			Link: row.LINK                      
                       }
                     );
                   });
@@ -143,7 +143,7 @@
           //handles when the state is highlighted, creating a pointer and a popup
           else if (features[0].state['Nexus'] === 'YES'){
             map.getCanvas().style.cursor = 'pointer'
-            const country = features[0].state['Country']
+            const country = features[0].state['CName']
             const nexus = features[0].state['Nexus']
             popup.trackPointer().setHTML('<h4>'+country+'</h4>'+'<p>'+nexus+'</p>').addTo(map)
             
