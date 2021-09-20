@@ -92,8 +92,8 @@
 			Description: row.DESCRIPTION,
 			Analysis: row.ANALYSIS,
 			Outcomes: row.OUTCOMES,
-			pnp: row.PNP,
-			finance: row.FINANCE
+			PnP: row.PNP,
+			Finance: row.FINANCE
                       }
                     );
                   });
@@ -152,7 +152,7 @@
             map.getCanvas().style.cursor = 'pointer'
             const country = features[0].state['CName']
             const Link = features[0].state['Link']
-            popup.trackPointer().setHTML('<h4><strong><center>'+country+'</h4></strong></center>'+'<p>Download the report <a href='+Link + '>here</a></p>').addTo(map)
+            popup.trackPointer().setHTML('<h4><strong><center>'+country+'</h4></strong></center>'+'<p>Analysis: '+Analysis+</p>'Download the report <a href='+Link + '>here</a></p>').addTo(map)
             
           }
           //handles everything else
