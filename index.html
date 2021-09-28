@@ -150,12 +150,12 @@
           //handles when the state is highlighted, creating a pointer and a popup
           else if (features[0].state['Nexus'] === 'YES'){
             map.getCanvas().style.cursor = 'pointer'
-            const Country = features[0].state['CName'];
-            const Link = features[0].state['Link'];
-	    const Analysis = features[0].state['Analysis'];
-	    const Outcomes = e.features[0].state['Outcomes'];
-	    const PnP =  e.features[0].state['PnP'];
-	    const Finance =  e.features[0].state['Finance'];
+            const Country = features[0].state['CName']
+            const Link = features[0].state['Link']
+	    const Analysis = features[0].state['Analysis']
+	    //const Outcomes = e.features[0].state['Outcomes'];
+	    //const PnP =  e.features[0].state['PnP'];
+	    //const Finance =  e.features[0].state['Finance'];
             popup.trackPointer().setHTML('<h4><strong><center>'+Country+'</h4></strong></center>'+'Analysis: '+Analysis+'<br>Download the report <a href='+Link + '>here</a></p>').addTo(map)
           }
           //handles everything else
