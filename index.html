@@ -139,7 +139,7 @@
              closeButton: true,
             closeOnClick: false
             });
-        map.on('mousemove', (e) => {
+        map.on('click', (e) => {
         
           const features = map.queryRenderedFeatures(e.point);
           //handles if there are no features either before render or after when on places like the oceans.
